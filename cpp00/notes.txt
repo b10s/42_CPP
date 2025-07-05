@@ -1,0 +1,7 @@
+What is CPP standard library? Where to read about it? Is it described in standard as C standard library?
+
+Can't use *printf(), *alloc(), free(); can't use external libs, c++11 and Boost;
+
+Read Norm chapter about Makefile
+
+
