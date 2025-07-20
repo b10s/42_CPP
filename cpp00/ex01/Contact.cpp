@@ -14,6 +14,3 @@ Contact::Contact(std::string firstName, std::string lastName) {
 	this->lastName = lastName;
 }
 
-//TODO: use resetflags after SEARCH out
-// https://cplusplus.com/reference/iomanip/resetiosflags/
-	

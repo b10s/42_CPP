@@ -5,7 +5,7 @@
 class PhoneBook {
 	public:
 		PhoneBook();
-		void Add(std::string firstName);
+		void Add(std::string firstName, std::string lastName);
 		void Search();
 	private:
 		Contact contacts[CONTACTS_CNT];

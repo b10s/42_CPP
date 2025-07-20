@@ -5,15 +5,40 @@
 #include <string>
 
 int main() {
-	printf("hi\n");
+	PhoneBook pb;
+	std::cout << "Welcome to awesome Phone Book!" << std::endl;
+	while (true) {
+		std::cout << std::endl << "Please enter command (ADD, SEARCH, EXIT):" << std::endl;
+		// ask for command
+		std::string cmd;
+		std::cin >> cmd;
+		//std::cout << "command was " << cmd << std::endl;
+
+		//TODO: to upper
+
+
+		//compare to three predefined commands
+		if (cmd == "ADD") {
+			std::cout << "command was " << cmd << std::endl;
+		} else if (cmd == "SEARCH") {
+			std::cout << "command was " << cmd << std::endl;
+		} else if (cmd == "EXIT") {
+			std::cout << "command was " << cmd << std::endl;
+		} else {
+			std::cout << "Unknown command. Allowed commands are: ADD, SEARCH, EXIT." << std::endl;
+		}
+	}
+
 	std::string foo = "aaa";
 	std::cout << std::setfill('.') << std::setw(10);
+	std::cout << 123 << std::endl;
+	// read about this left and rigth
+	// Q: why right doesn't work?
 	std::cout.flags(std::ios::left);
 	std::cout << 123 << std::endl;
-	PhoneBook pb;
-	pb.Add("aa");
+	//pb.Add("aa");
 	//pb.Add("bb");
 	//pb.Add("cc");
 	//pb.Add("dd");
-	std::cout << 123 << std::endl;
+	//std::cout << 123 << std::endl;
 }
