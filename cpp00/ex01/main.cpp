@@ -20,6 +20,10 @@ int main() {
 		//compare to three predefined commands
 		if (cmd == "ADD") {
 			std::cout << "command was " << cmd << std::endl;
+			// ask for additional input
+			// TODO: do not allow empty input (ask to enter once more or propose stop entering)
+			// Q: what is the length of the input?
+			pb.Add();
 		} else if (cmd == "SEARCH") {
 			std::cout << "command was " << cmd << std::endl;
 		} else if (cmd == "EXIT") {
