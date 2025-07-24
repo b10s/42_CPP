@@ -11,7 +11,7 @@ int main() {
 		std::cout << std::endl << "Please enter command (ADD, SEARCH, EXIT):" << std::endl;
 		// ask for command
 		std::string cmd;
-		std::cin >> cmd;
+		getline(std::cin, cmd);
 		//std::cout << "command was " << cmd << std::endl;
 
 		//TODO: to upper
