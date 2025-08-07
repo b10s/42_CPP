@@ -9,7 +9,7 @@ class PhoneBook {
 		void Search();
 	private:
 		Contact contacts[CONTACTS_CNT];
-		int idx;
+		int next_idx;
 		int full;
 };
 
