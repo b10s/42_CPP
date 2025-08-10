@@ -9,7 +9,6 @@ Contact::~Contact() {
 	std::cout << "DEBUG: destroying contact." << std::endl;
 }
 
-// TODO: add more fields as in subj
 Contact::Contact(std::string firstName, std::string lastName, std::string nickName, std::string phoneNumber, std::string darkestSecret) {
 	this->firstName = firstName;
 	this->lastName = lastName;

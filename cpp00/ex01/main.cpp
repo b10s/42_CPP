@@ -46,15 +46,13 @@ int main() {
 			std::cout << "DEBUG: EOF. bb." << std::endl;
 			break;
 		}
-		//TODO: to upper
-
+		//TODO: to upper?
 
 		//compare to three predefined commands
 		if (cmd == "ADD") {
 			std::cout << "DEBUG: command was " << cmd << std::endl;
 
 			// ask for additional input
-			// TODO: do not allow empty input (ask to enter once more or propose stop entering)
 			// Q: what is the length of the input?
 			pb.Add();
 		} else if (cmd == "SEARCH") {

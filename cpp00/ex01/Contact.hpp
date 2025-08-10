@@ -1,8 +1,11 @@
+//TODO: from subj:
+// You should be able to use each of your headers independently from others. Thus,
+// they must include all the dependencies they need. However, you must avoid the
+// problem of double inclusion by adding include guards. Otherwise, your grade will
+// be 0.
 #include <string>
 
-// TODO: fields are - nickname, phone number, and darkest secret
-
-// TODO: check if fields are public or private?
+// TODO: check if fields are public or private? (some repo on github)
 
 class Contact {
 	public:
@@ -16,4 +19,8 @@ class Contact {
 		std::string darkestSecret;
 	private:
 };
+
+//TODO: move all string fields to private; add two functions:
+//			print contact for search index
+//			print contact fully
 

@@ -1,3 +1,9 @@
+//TODO: from subj:
+// You should be able to use each of your headers independently from others. Thus,
+// they must include all the dependencies they need. However, you must avoid the
+// problem of double inclusion by adding include guards. Otherwise, your grade will
+// be 0.
+
 #include "./Contact.hpp"
 #include <string>
 #define CONTACTS_CNT 8

@@ -71,6 +71,7 @@ void PhoneBook::Add() {
 }
 
 // TODO: use resetflags after SEARCH out
+// A: seems like not needed
 // https://cplusplus.com/reference/iomanip/resetiosflags/
 void PhoneBook::Search() {
 	Contact c;
@@ -142,7 +143,6 @@ void PhoneBook::Search() {
 
 	}
 
-	// TODO: prompt for index (check idx)
 	// Q: should I display a secret? check github solutions or ask others
 	std::cout << "Please enter index: ";
 	std::getline(std::cin, contactIndex);
