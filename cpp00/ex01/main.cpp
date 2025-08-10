@@ -26,6 +26,8 @@
 // to test:
 // make && echo "ADD\na\na\nADD\nb\nb\nSEARCH\nEXIT\n" | ./a.out
 
+// Q: why if I redirect from file to stdin there is inf loop?
+
 
 // TODO: polish Makefile - binary name, all needed targets, no relink
 
@@ -38,6 +40,12 @@ int main() {
 	while (true) {
 		std::cout << std::endl << "Please enter command (ADD, SEARCH, EXIT):" << std::endl;
 		getline(std::cin, cmd);
+		if (std::cin.eof()) {
+			// Q: can getline return empty string, 0 as return value, but it is not EOF?
+			// EOF or something unexpected
+			std::cout << "DEBUG: EOF. bb." << std::endl;
+			break;
+		}
 		//TODO: to upper
 
 
