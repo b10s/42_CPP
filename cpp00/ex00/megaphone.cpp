@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cctype>
 
-// TODO: use std::ios::uppercase
+// Q: use std::ios::uppercase ?
 // https://cplusplus.com/reference/iomanip/setiosflags/
 int main(int argc, char *argv[]) {
 	if (argc == 1) {
