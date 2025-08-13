@@ -5,10 +5,6 @@
 Contact::Contact() {
 }
 
-Contact::~Contact() {
-	std::cout << "DEBUG: destroying contact." << std::endl;
-}
-
 Contact::Contact(std::string firstName, std::string lastName, std::string nickName, std::string phoneNumber, std::string darkestSecret) {
 	this->firstName = firstName;
 	this->lastName = lastName;

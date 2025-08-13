@@ -70,9 +70,6 @@ void PhoneBook::Add() {
 	}
 }
 
-// TODO: use resetflags after SEARCH out
-// A: seems like not needed
-// https://cplusplus.com/reference/iomanip/resetiosflags/
 void PhoneBook::Search() {
 	Contact c;
 	std::string errMsg = "Take a break. Drink tea, walk in the park and try again later :)";
@@ -111,14 +108,11 @@ void PhoneBook::Search() {
 		std::cout << std::right << std::setw(10) << i;
 		std::cout << " | ";
 
-		// TODO: move it to some func?
+		// Q: move it to some func?
 		// Q: can it be done using only cout magic?
 		str = this->contacts[i].firstName;
 		// Q: what diff btw s.size() and s.length()?
 		if (str.length() > 10) {
-			// TODO: make sure after resize, orig string is not modified!
-			//	A: seems like not
-			//	std::cout << std::endl << "(" << this->contacts[i].firstName << ")" << std::endl;
 			str.resize(9);
 			str = str + ".";
 		}
