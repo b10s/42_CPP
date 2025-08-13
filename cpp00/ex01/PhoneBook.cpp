@@ -140,15 +140,18 @@ void PhoneBook::Search() {
 	// Q: should I display a secret? check github solutions or ask others
 	std::cout << "Please enter index: ";
 	std::getline(std::cin, contactIndex);
+
 	if (contactIndex.empty()) {
 		std::cout << "Index can't be empty." << std::endl << errMsg << std::endl;
 		return;
 	}
+
 	if (contactIndex.find_first_not_of(digits) != std::string::npos) {
 		std::cout << "Index should be a number." << std::endl << errMsg << std::endl;
 		return;
 	}
-	if (contactIndex.size() != 1 && contactIndex.find_first_not_of(narrowedDigits)) {
+
+	if (contactIndex.size() != 1) {
 		std::cout << "Index should be in between 0 and 7 including. I.e. [0-7]" << std::endl << errMsg << std::endl;
 		return;
 	}
@@ -156,8 +159,19 @@ void PhoneBook::Search() {
 	std::istringstream is(contactIndex);
 	idx = 9;
 	is >> idx;
-	if ( is.fail()  || idx < 0 || idx > 7 ) {
+
+	if ( is.fail() ) {
 		std::cout << "ERROR: converting string to int is failed. Consult with system administrator." << std::endl;
+		return;
+	}
+
+	if (idx < 0 || idx > 7) {
+		std::cout << "Index should be in between 0 and 7 including. I.e. [0-7]" << std::endl << errMsg << std::endl;
+		return;
+	}
+
+	if (this->full == 0 && idx >= this->next_idx ) {
+		std::cout << "ERROR: there is no such index: " << idx << ". Try again." << std::endl;
 		return;
 	}
 
