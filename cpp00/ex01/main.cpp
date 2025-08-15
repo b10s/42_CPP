@@ -21,6 +21,7 @@
 // What are Namespaces, initialization lists, static, const?
 // Can we use Namespaces? On page 4 it says:
 //	"Note that unless explicitly stated otherwise, the using namespace <ns_name> and friend keywords are forbidden. Otherwise, your grade will be -42."
+// Q: What are the "and friend keywords" in above statememnt?
 
 // Q: why if I redirect from file to stdin there is inf loop?
 
