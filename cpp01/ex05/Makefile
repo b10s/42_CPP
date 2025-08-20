@@ -1,8 +1,8 @@
 # https://github.com/42school/norminette/blob/master/pdf/en.norm.pdf
 # p.16 Makefile
 
-NAME = braiiinz
-SRC = main.cpp Zombie.cpp newZombie.cpp randomChump.cpp
+NAME = harl
+SRC = main.cpp Harl.cpp
 
 all: $(NAME)
 
