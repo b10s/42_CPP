@@ -21,6 +21,7 @@ class Fixed {
 	public:
 		Fixed();
 		Fixed(const Fixed& other);
+		// interesting, the `const Fixed& other` and `Fixed const &other` are the same
 		Fixed& operator=(const Fixed& other);
 		~Fixed();
 		// constant member function:
