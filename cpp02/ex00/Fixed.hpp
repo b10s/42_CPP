@@ -1,3 +1,6 @@
+#ifndef FIXED_HPP
+#define FIXED_HPP
+
 /* Orthodox Canonical Form
 		- default constructor
 		- copy constructor
@@ -27,4 +30,6 @@ class Fixed {
 		int getRawBits(void) const;
 		void setRawBits(int const raw);
 };
+
+#endif
 
