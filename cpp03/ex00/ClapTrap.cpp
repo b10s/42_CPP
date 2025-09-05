@@ -1,7 +1,6 @@
 #include "./ClapTrap.hpp"
 #include <iostream>
 
-
 ClapTrap::ClapTrap(const std::string& name) {
 	*this = ClapTrap();
 	this->name = name;

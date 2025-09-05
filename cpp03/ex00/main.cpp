@@ -6,7 +6,6 @@ int main() {
 	ClapTrap ct1 = ClapTrap("Interplanetary Ninja Assassin");
 	ClapTrap ct2 = ClapTrap("Idiot");
 
-
 	std::cout << "test starts" << std::endl;
 
 	ct0.attack("Wheatley");
@@ -37,9 +36,8 @@ int main() {
 	ct2.beRepaired(1);
 	ct2.beRepaired(1);
 
-
 	std::cout << "test ends" << std::endl;
-
 
 	return 0;
 }
+
