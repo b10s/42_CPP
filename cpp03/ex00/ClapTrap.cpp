@@ -4,7 +4,7 @@
 ClapTrap::ClapTrap(const std::string& name) {
 	*this = ClapTrap();
 	this->name = name;
-	std::cout << "Nantoka constructor. The " << name << " ClapTrap is born." << std::endl;
+	std::cout << "Parameterized constructor. The " << name << " ClapTrap is born." << std::endl;
 }
 
 ClapTrap::ClapTrap() {
