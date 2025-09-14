@@ -1,8 +1,8 @@
 # https://github.com/42school/norminette/blob/master/pdf/en.norm.pdf
 # p.16 Makefile
 
-NAME = f1xed_v2
-SRC = main.cpp Fixed.cpp
+NAME = frag
+SRC = main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 
 all: $(NAME)
 
