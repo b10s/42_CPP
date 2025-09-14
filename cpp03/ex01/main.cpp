@@ -3,45 +3,21 @@
 #include <iostream>
 
 int main() {
-	ScavTrap st = ScavTrap();
-	
-	/*
-	ClapTrap ct0 = ClapTrap();
-	ClapTrap ct1 = ClapTrap("Interplanetary Ninja Assassin");
-	ClapTrap ct2 = ClapTrap("Idiot");
+	{
+		std::cout << std::endl << "<showing construcor/destructor chaining with default constructor>" << std::endl;
+		ScavTrap st0 = ScavTrap();
+	}
 
-	std::cout << "test starts" << std::endl;
+	std::cout << std::endl << "<default constructor>" << std::endl;
+	ScavTrap st0 = ScavTrap();
 
-	ct0.attack("Wheatley");
-	ct0.attack("Wheatley");
-	ct0.attack("Wheatley");
-	ct0.attack("Wheatley");
-	ct0.attack("Wheatley");
-	ct0.attack("Wheatley");
-	ct0.attack("Wheatley");
-	ct0.attack("Wheatley");
-	ct0.attack("Wheatley");
-	ct0.attack("Wheatley");
-	ct0.attack("Wheatley");
+	std::cout << std::endl << "<copy constructor>" << std::endl;
+	ScavTrap st1 = ScavTrap(st0);
 
-	ct1.takeDamage(1);
-	ct1.takeDamage(42);
-	ct1.takeDamage(100);
+	std::cout << std::endl << "<parameterized constructor>" << std::endl;
+	ScavTrap st3 = ScavTrap("foo");
 
-	ct2.beRepaired(1);
-	ct2.beRepaired(1);
-	ct2.beRepaired(1);
-	ct2.beRepaired(1);
-	ct2.beRepaired(1);
-	ct2.beRepaired(1);
-	ct2.beRepaired(1);
-	ct2.beRepaired(1);
-	ct2.beRepaired(1);
-	ct2.beRepaired(1);
-	ct2.beRepaired(1);
-
-	std::cout << "test ends" << std::endl;
-	*/
+	std::cout << std::endl << "<end>" << std::endl;
 
 	return 0;
 }
