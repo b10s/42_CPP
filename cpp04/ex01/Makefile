@@ -1,8 +1,8 @@
 # https://github.com/42school/norminette/blob/master/pdf/en.norm.pdf
 # p.16 Makefile
 
-NAME = makesound
-SRC = main.cpp Animal.cpp Dog.cpp Cat.cpp
+NAME = brain
+SRC = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp Brain.cpp
 
 all: $(NAME)
 
