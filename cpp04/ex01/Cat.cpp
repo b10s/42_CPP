@@ -7,7 +7,7 @@ Cat::Cat() {
 	std::cout << "Default constructor. The default Cat - " << this->type << " - is born." << std::endl;
 }
 
-Cat::Cat(const Cat& other) {
+Cat::Cat(const Cat& other) : Animal(other) {
 	*this = other;
 
 	// deep copy

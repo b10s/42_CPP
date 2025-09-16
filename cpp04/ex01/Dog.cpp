@@ -7,7 +7,7 @@ Dog::Dog() {
 	std::cout << "Default constructor. The default Dog - " << this->type << " - is born." << std::endl;
 }
 
-Dog::Dog(const Dog& other) {
+Dog::Dog(const Dog& other) : Animal(other) {
 	*this = other;
 
 	// deep copy
