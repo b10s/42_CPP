@@ -12,13 +12,6 @@ Animal::Animal(const Animal& other) {
 	std::cout << "Copy constructor of Animal class. The " << this->type << " is born." << std::endl;
 }
 
-// Q: do we need parameterized constructor here?
-Animal::Animal(const std::string& type) {
-	*this = Animal();
-	this->type = type;
-	std::cout << "Parameterized constructor of Animal class. The " << type << " is born." << std::endl;
-}
-
 Animal& Animal::operator=(const Animal& other) {
 	std::cout << "Assignment operator of Animal class is here. Hi." << std::endl;
 	if (this == &other) {

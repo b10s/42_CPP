@@ -19,10 +19,6 @@ class Animal {
 		//		to access this memory (i.e. to avoid shallow copy).
 		Animal(const Animal& other); 
 
-		// Q: do we need parameterized constructor here for this ex?
-		// parameterized constructor (Q: why we need it in general?)
-		Animal(const std::string& type);
-
 		// taking in mind cpp calls = or copy constructor implicitly
 		// e.g. when we pass obj to function by value, it is important to implement
 		// both and copy constructor and assignment operator

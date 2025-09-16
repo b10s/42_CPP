@@ -20,10 +20,6 @@ class Cat : public Animal {
 		//		to access this memory (i.e. to avoid shallow copy).
 		Cat(const Cat& other); 
 
-		// Q: do we need parameterized constructor here?
-		// parameterized constructor (Q: why we need it?)
-		Cat(const std::string& type);
-
 		// taking in mind cpp calls = or copy constructor implicitly
 		// e.g. when we pass obj to function by value, it is important to implement
 		// both and copy constructor and assignment operator

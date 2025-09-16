@@ -11,13 +11,6 @@ WrongAnimal::WrongAnimal(const WrongAnimal& other) {
 	std::cout << "Copy constructor of WrongAnimal class. The " << this->type << " is born." << std::endl;
 }
 
-// Q: do we need parameterized constructor here?
-WrongAnimal::WrongAnimal(const std::string& type) {
-	*this = WrongAnimal();
-	this->type = type;
-	std::cout << "Parameterized constructor of WrongAnimal class. The " << type << " is born." << std::endl;
-}
-
 WrongAnimal& WrongAnimal::operator=(const WrongAnimal& other) {
 	std::cout << "Assignment operator of WrongAnimal class is here. Hi." << std::endl;
 	if (this == &other) {

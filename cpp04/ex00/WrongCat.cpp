@@ -11,13 +11,6 @@ WrongCat::WrongCat(const WrongCat& other) {
 	std::cout << "Copy constructor of WrongCat class. The " << this->type << " is born." << std::endl;
 }
 
-// Q: do we need parameterized constructor here? It breaks a bit the idea.
-WrongCat::WrongCat(const std::string& type) {
-	*this = WrongCat();
-	this->type = type;
-	std::cout << "Parameterized constructor of WrongCat class. The " << type << " is born." << std::endl;
-}
-
 WrongCat& WrongCat::operator=(const WrongCat& other) {
 	std::cout << "Assignment operator of WrongCat class is here. Hi." << std::endl;
 	if (this == &other) {
