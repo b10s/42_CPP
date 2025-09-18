@@ -26,7 +26,7 @@ class WrongAnimal {
 		WrongAnimal& operator=(const WrongAnimal& other);
 		virtual ~WrongAnimal();
 
-		virtual void makeSound(void) const;
+		void makeSound(void) const;
 
 		// Q: why getType no need to be virtual?
 		std::string getType(void) const;

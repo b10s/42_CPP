@@ -8,16 +8,22 @@
 int main() {
 	std::cout << std::endl << "<subject tests>" << std::endl;
 	const Animal* meta = new Animal();
-	//const WrongAnimal* meta = new WrongAnimal();
 	const Animal* j = new Dog();
 	const Animal* i = new Cat();
-	//const WrongAnimal* i = new WrongCat();
+
 
 	std::cout << j->getType() << " " << std::endl;
 	std::cout << i->getType() << " " << std::endl;
 	i->makeSound();
 	j->makeSound();
 	meta->makeSound();
+
+	std::cout << std::endl << "<test wrong animal/cat (non-virtual methods, compile time polymorphism)>" << std::endl;
+	const WrongAnimal* wmeta = new WrongAnimal();
+	const WrongAnimal* wi = new WrongCat();
+	std::cout << wi->getType() << " " << std::endl;
+	wi->makeSound();
+	wmeta->makeSound();
 
 	std::cout << std::endl << "<default Animal constructor>" << std::endl;
 	Animal a0 = Animal();
