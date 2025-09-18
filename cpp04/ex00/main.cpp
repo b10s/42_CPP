@@ -59,6 +59,8 @@ int main() {
 	delete meta;
 	delete j;
 	delete i;
+	delete wmeta;
+	delete wi;
 
 	return 0;
 }
