@@ -8,13 +8,8 @@ Cat::Cat() {
 }
 
 Cat::Cat(const Cat& other) : Animal(other) {
-	*this = other;
-
-	// deep copy
-	this->brain = new Brain();
-	this->brain = other.brain;
-
 	std::cout << "Copy constructor of Cat class. The " << this->type << " is born." << std::endl;
+	*this = other;
 }
 
 Cat& Cat::operator=(const Cat& other) {
@@ -27,7 +22,7 @@ Cat& Cat::operator=(const Cat& other) {
 
 	// deep copy
 	this->brain = new Brain();
-	this->brain = other.brain;
+	*(this->brain) = *(other.brain);
 
 	return *this;
 }

@@ -8,16 +8,12 @@ Dog::Dog() {
 }
 
 Dog::Dog(const Dog& other) : Animal(other) {
-	*this = other;
-
-	// deep copy
-	this->brain = new Brain();
-	this->brain = other.brain;
-
 	std::cout << "Copy constructor of Dog class. The " << this->type << " is born." << std::endl;
+	*this = other;
 }
 
 Dog& Dog::operator=(const Dog& other) {
+	// Q: what is this here in copy assignment operator?
 	std::cout << "Assignment operator of Dog class is here. Hi." << std::endl;
 	if (this == &other) {
 		return *this;
@@ -27,7 +23,7 @@ Dog& Dog::operator=(const Dog& other) {
 
 	// deep copy
 	this->brain = new Brain();
-	this->brain = other.brain;
+	*(this->brain) = *(other.brain);
 
 	return *this;
 }
