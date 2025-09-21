@@ -26,7 +26,7 @@ class WrongCat : public WrongAnimal {
 		// for the same reason as described above.
 		WrongCat& operator=(const WrongCat& other);
 		virtual ~WrongCat();
-		virtual void makeSound(void) const;
+		void makeSound(void) const;
 		std::string getType(void) const;
 };
 

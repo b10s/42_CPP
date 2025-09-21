@@ -30,6 +30,13 @@ int main() {
 		std::cout << "The animal is dead, long live the animal!" << std::endl << std::endl;
 	}
 
+	std::cout << std::endl << "<deep copy test>" << std::endl;
+	Dog d;
+	{
+		std::cout << std::endl << "<inside {}>" << std::endl;
+		Dog tmp = d;
+	}
+
 	std::cout << std::endl << "<the end>" << std::endl;
 
 	return 0;
